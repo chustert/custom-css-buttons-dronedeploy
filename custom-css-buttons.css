@@ -1,0 +1,517 @@
+/*** CUSTOM BUTTON STYLES ***/
+
+
+/* cstm-btn-nav-primary */
+
+.cstm-btn-nav-primary {
+  display: inline-block;
+	position: relative;
+  background-color: #3f48e9;
+  padding: .3rem 1rem;
+  transition: background 0.2s cubic-bezier(0.7, 0, 0.2, 1), color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  border-radius: 100px;
+  /*border: 1px solid #3f48e9;*/
+  overflow: hidden;
+  pointer-events: auto;
+	font-family: inherit;
+	font-size: inherit;
+  color: rgb(255, 255, 255);
+  box-shadow: inset 0 0 0 2px #3f48e9;
+}
+.cstm-btn-nav-primary:hover {
+  color: rgb(255, 255, 255, 0);
+  transition: color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-nav-primary::before {
+  position: absolute;
+	content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	background: #000;
+  border-radius: 100px;
+	transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1), background 0.2s cubic-bezier(0.7, 0, 0.2, 1) 0.1s;
+  transform: translate3d(-100%,0,0);
+  transition-delay: 100ms; /* Delays back to initial state of bg slide by 2s */
+}
+
+.cstm-btn-nav-primary:hover::before {
+	transform: translate3d(0,0,0);
+    transition-delay: 100ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-nav-primary:hover span {
+  transform: translateY(-140%);
+    transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-nav-primary span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  transform: translateY(0%);
+  transition-delay: 150ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-nav-primary span::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cstm-btn-nav-primary::after {
+  position: absolute;
+  content: attr(data-text);
+  bottom: -50px;
+  top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  color: #fff;
+  transition-delay: 50ms; /* Delays back to initial state of bottom text slide in by 500ms */
+}
+
+.cstm-btn-nav-primary:hover::after {
+  transform: translateY(0);
+  transition-delay: 200ms; /* Delays bottom text slide in by 1s */
+}
+
+
+/* cstm-btn-nav-secondary */
+
+.cstm-btn-nav-secondary {
+  display: inline-block;
+	position: relative;
+  background-color: #fff;
+  padding: .3rem 1rem;
+  transition: background 0.2s cubic-bezier(0.7, 0, 0.2, 1), color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  border-radius: 100px;
+  /*border: 1px solid #3f48e9;*/
+  overflow: hidden;
+  pointer-events: auto;
+	font-family: inherit;
+	font-size: inherit;
+  color: rgb(0, 0, 0);
+  box-shadow: inset 0 0 0 2px #3f48e9;
+}
+.cstm-btn-nav-secondary:hover {
+  color: rgb(255, 255, 255, 0);
+  transition: color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-nav-secondary::before {
+  position: absolute;
+	content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	background: #000;
+  border-radius: 100px;
+	transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1), background 0.2s cubic-bezier(0.7, 0, 0.2, 1) 0.1s;
+  transform: translate3d(-100%,0,0);
+  transition-delay: 100ms; /* Delays back to initial state of bg slide by 2s */
+}
+
+.cstm-btn-nav-secondary:hover::before {
+	transform: translate3d(0,0,0);
+    transition-delay: 100ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-nav-secondary:hover span {
+  transform: translateY(-140%);
+    transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-nav-secondary span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  transform: translateY(0%);
+  transition-delay: 150ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-nav-secondary span::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cstm-btn-nav-secondary::after {
+  position: absolute;
+  content: attr(data-text);
+  bottom: -50px;
+  top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  color: #fff;
+  transition-delay: 50ms; /* Delays back to initial state of bottom text slide in by 500ms */
+}
+
+.cstm-btn-nav-secondary:hover::after {
+  transform: translateY(0);
+  transition-delay: 200ms; /* Delays bottom text slide in by 1s */
+}
+
+
+/* cstm-btn-primary */
+
+.cstm-btn-primary {
+  display: inline-block;
+	position: relative;
+  background-color: #3f48e9;
+  padding: .25rem 1rem;
+  transition: background 0.2s cubic-bezier(0.7, 0, 0.2, 1), color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  border-radius: 100px;
+  border: 2px solid #3f48e9;
+  overflow: hidden;
+  pointer-events: auto;
+	font-family: inherit;
+	font-size: inherit;
+  color: rgb(255, 255, 255);
+/*box-shadow: inset 0 0 0 1px #3f48e9;*/
+}
+.cstm-btn-primary:hover {
+  color: rgb(255, 255, 255, 0);
+  transition: color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-primary::before {
+  position: absolute;
+	content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	background: #fff;
+  border-radius: 100px;
+	transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1), background 0.2s cubic-bezier(0.7, 0, 0.2, 1) 0.1s;
+  transform: translate3d(-100%,0,0);
+  transition-delay: 100ms; /* Delays back to initial state of bg slide by 2s */
+}
+
+.cstm-btn-primary:hover::before {
+	transform: translate3d(0,0,0);
+    transition-delay: 100ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-primary:hover span {
+  transform: translateY(-100%);
+    transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-primary span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  transform: translateY(0%);
+  transition-delay: 150ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-primary span::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cstm-btn-primary::after {
+  position: absolute;
+  content: attr(data-text);
+  bottom: -50px;
+  top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  color: #000;
+  transition-delay: 50ms; /* Delays back to initial state of bottom text slide in by 500ms */
+}
+
+.cstm-btn-primary:hover::after {
+  transform: translateY(0);
+  transition-delay: 200ms; /* Delays bottom text slide in by 1s */
+}
+
+
+/* cstm-btn-transparent-black */
+
+.cstm-btn-transparent-black {
+  display: inline-block;
+	position: relative;
+  background-color: transparent;
+  padding: .3rem 1rem;
+  transition: background 0.2s cubic-bezier(0.7, 0, 0.2, 1), color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  border-radius: 100px;
+  /*border: 1px solid #3f48e9;*/
+  overflow: hidden;
+  pointer-events: auto;
+	font-family: inherit;
+	font-size: inherit;
+  color: rgb(0, 0, 0);
+  box-shadow: inset 0 0 0 2px #000;
+}
+.cstm-btn-transparent-black:hover {
+  color: rgb(255, 255, 255, 0);
+  transition: color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-transparent-black::before {
+  position: absolute;
+	content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	background: #000;
+  border-radius: 100px;
+	transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1), background 0.2s cubic-bezier(0.7, 0, 0.2, 1) 0.1s;
+  transform: translate3d(-100%,0,0);
+  transition-delay: 100ms; /* Delays back to initial state of bg slide by 2s */
+}
+
+.cstm-btn-transparent-black:hover::before {
+	transform: translate3d(0,0,0);
+    transition-delay: 100ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-transparent-black:hover span {
+  transform: translateY(-140%);
+    transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-transparent-black span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  transform: translateY(0%);
+  transition-delay: 150ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-transparent-black span::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cstm-btn-transparent-black::after {
+  position: absolute;
+  content: attr(data-text);
+  bottom: -50px;
+  top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  color: #fff;
+  transition-delay: 50ms; /* Delays back to initial state of bottom text slide in by 500ms */
+}
+
+.cstm-btn-transparent-black:hover::after {
+  transform: translateY(0);
+  transition-delay: 200ms; /* Delays bottom text slide in by 1s */
+}
+
+
+/* cstm-btn-transparent-purple */
+
+.cstm-btn-transparent-purple {
+  display: inline-block;
+	position: relative;
+  background-color: transparent;
+  padding: .3rem 1rem;
+  transition: background 0.2s cubic-bezier(0.7, 0, 0.2, 1), color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  border-radius: 100px;
+  /*border: 1px solid #3f48e9;*/
+  overflow: hidden;
+  pointer-events: auto;
+	font-family: inherit;
+	font-size: inherit;
+  color: #3f48e9;
+  box-shadow: inset 0 0 0 2px #3f48e9;
+}
+.cstm-btn-transparent-purple:hover {
+  color: rgb(255, 255, 255, 0);
+  transition: color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-transparent-purple::before {
+  position: absolute;
+	content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	background: #3f48e9;
+  border-radius: 100px;
+	transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1), background 0.2s cubic-bezier(0.7, 0, 0.2, 1) 0.1s;
+  transform: translate3d(-100%,0,0);
+  transition-delay: 100ms; /* Delays back to initial state of bg slide by 2s */
+}
+
+.cstm-btn-transparent-purple:hover::before {
+	transform: translate3d(0,0,0);
+    transition-delay: 100ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-transparent-purple:hover span {
+  transform: translateY(-140%);
+    transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-transparent-purple span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  transform: translateY(0%);
+  transition-delay: 150ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-transparent-purple span::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cstm-btn-transparent-purple::after {
+  position: absolute;
+  content: attr(data-text);
+  bottom: -50px;
+  top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  color: #fff;
+  transition-delay: 50ms; /* Delays back to initial state of bottom text slide in by 500ms */
+}
+
+.cstm-btn-transparent-purple:hover::after {
+  transform: translateY(0);
+  transition-delay: 200ms; /* Delays bottom text slide in by 1s */
+}
+
+
+/* cstm-btn-white */
+
+.cstm-btn-white {
+  display: inline-block;
+	position: relative;
+  background-color: #fff;
+  padding: .3rem 1rem;
+  transition: background 0.2s cubic-bezier(0.7, 0, 0.2, 1), color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  border-radius: 100px;
+  /*border: 1px solid #3f48e9;*/
+  overflow: hidden;
+  pointer-events: auto;
+	font-family: inherit;
+	font-size: inherit;
+  color: #000;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.cstm-btn-white:hover {
+  color: rgb(255, 255, 255, 0);
+  transition: color 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-white::before {
+  position: absolute;
+	content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	background: #000;
+  border-radius: 100px;
+	transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1), background 0.2s cubic-bezier(0.7, 0, 0.2, 1) 0.1s;
+  transform: translate3d(-100%,0,0);
+  transition-delay: 100ms; /* Delays back to initial state of bg slide by 2s */
+}
+
+.cstm-btn-white:hover::before {
+	transform: translate3d(0,0,0);
+    transition-delay: 100ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-white:hover span {
+  transform: translateY(-140%);
+    transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.cstm-btn-white span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  transform: translateY(0%);
+  transition-delay: 150ms; /* Delays white bg slide in by 500ms */
+}
+
+.cstm-btn-white span::before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cstm-btn-white::after {
+  position: absolute;
+  content: attr(data-text);
+  bottom: -50px;
+  top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  color: #fff;
+  transition-delay: 50ms; /* Delays back to initial state of bottom text slide in by 500ms */
+}
+
+.cstm-btn-white:hover::after {
+  transform: translateY(0);
+  transition-delay: 200ms; /* Delays bottom text slide in by 1s */
+}
